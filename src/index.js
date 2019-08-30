@@ -23,6 +23,8 @@ const canWalkInDirection = (warrior, direction = DIRECTIONS.FORWARD) => {
   return false;
 };
 
+const getDirections = () => Object.keys(DIRECTIONS).map(key => DIRECTIONS[key]);
+
 const getFeel = (warrior, direction = DIRECTIONS.FORWARD) => {
   const feel = warrior.feel(direction);
   if (feel.isEmpty()) return FEELINGS.EMPTY;
@@ -34,11 +36,21 @@ const getFeel = (warrior, direction = DIRECTIONS.FORWARD) => {
 };
 
 const getFeelings = warrior => {
-  const directions = Object.keys(DIRECTIONS).map(key => DIRECTIONS[key]);
+  const directions = getDirections();
   return directions.map(direction => ({
     direction,
     feel: getFeel(warrior, direction)
   }));
+};
+
+const getLook = (warrior, direction = DIRECTIONS.FORWARD) => {
+  const look = warrior.look(direction);
+  warrior.think(look);
+};
+
+const getLooks = warrior => {
+  const directions = getDirections();
+  directions.forEach(direction => getLook(warrior, direction));
 };
 
 const getNearestFeeling = (feelings, feeling) => {
