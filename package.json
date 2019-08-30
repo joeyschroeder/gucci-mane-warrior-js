@@ -1,0 +1,35 @@
+{
+  "name": "gucci-mane-warrior-js",
+  "version": "0.0.1",
+  "description": "A WarriorJS Player class.",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "./node_modules/.bin/eslint src/ && echo \"\\x1b[102m\\x1b[1m ESLINT \\x1b[0m\" No JavaScript ESLint errors to fix",
+    "eslint:fix": "./node_modules/.bin/eslint --fix src/ && echo \"\\x1b[102m\\x1b[1m ESLINT \\x1b[0m\" ESLint JavaScript errors fixed",
+    "test": "./node_modules/.bin/jest --config ./jest.config.json",
+    "test:coverage": "./node_modules/.bin/jest --config ./jest.config.json --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joeyschroeder/gucci-mane-warrior-js"
+  },
+  "author": {
+    "name": "Joey Schroeder",
+    "email": "schrjos@gmail.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/joeyschroeder/gucci-mane-warrior-js",
+  "devDependencies": {
+    "@babel/core": "7.4.5",
+    "@babel/preset-env": "7.4.5",
+    "babel-eslint": "^10.0.2",
+    "babel-jest": "^24.8.0",
+    "enzyme": "^3.10.0",
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-jest": "^22.7.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2"
+  }
+}

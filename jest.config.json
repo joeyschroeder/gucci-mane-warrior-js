@@ -1,0 +1,18 @@
+{
+  "collectCoverageFrom": [
+    "src/**/*.js"
+  ],
+  "coveragePathIgnorePatterns": [
+    "src/index.js"
+  ],
+  "coverageReporters": [
+    "lcov",
+    "text"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/?(*.)+(test).js"
+  ],
+  "transform": {
+    "^.+\\.js$": "babel-jest"
+  }
+}
