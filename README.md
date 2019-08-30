@@ -7,9 +7,5 @@
 # 🍦 gucci-mane-warrior-js
 A [WarriorJS](https://warriorjs.com/) Player class.
 
-## Authors
-* **Joey Schroeder** - *Initial work* - [joeyschroeder.com](https://joeyschroeder.com)
-See also the list of [contributors](https://github.com/joeyschroeder/gucci-mane-warrior-js/graphs/contributors) who participated in this project.
-
 ## License
 This project is licensed under the MIT License - see the [MIT Open Source Initiative](https://opensource.org/licenses/MIT) for details.
