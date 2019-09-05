@@ -146,6 +146,8 @@ class Player {
     const seeEnemy = getNearestLook(warrior, TILES.ENEMY);
     if (seeEnemy) {
       const { direction } = seeEnemy;
+      if (direction === DIRECTIONS.BACKWARD) return { action: warrior.pivot };
+
       return { action: warrior.shoot, direction };
     }
   }
